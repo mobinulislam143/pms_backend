@@ -4,7 +4,7 @@ import prisma from "./shared/prisma";
 
 config();
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5090;
 
 async function startServer(){
   try{
@@ -22,3 +22,5 @@ async function startServer(){
 }
 
 startServer()
+
+export default app

@@ -44,6 +44,10 @@ app.use(limiter);
 // Routes
 app.use('/api/v1', router);
 
+app.use('/api/v1/test', (req, res) => {
+  res.status(200).json({ success: true, message: "Api is working fine" })
+})
+
 app.use(GlobalErrorHandler)
 
 app.use((req, res, next) => {
